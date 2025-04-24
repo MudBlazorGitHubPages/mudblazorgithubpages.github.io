@@ -18,6 +18,6 @@ public class UnknownEnumConverter : JsonConverterFactory
     {
         var underlyingConverter = _underlying.CreateConverter(enumType, options);
         var converterType = typeof(UnknownEnumConverter<>).MakeGenericType(enumType);
-        return (JsonConverter)Activator.CreateInstance(converterType, underlyingConverter);
+        return (JsonConverter)Activator.CreateInstance(converterType, underlyingConverter)!;
     }
 }
