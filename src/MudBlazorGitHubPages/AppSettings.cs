@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace MudBlazorPages;
+namespace MudBlazorGitHubPages;
 
 public enum ExampleEnum
 {
@@ -11,12 +11,15 @@ public enum ExampleEnum
 public class AppSettings
 {
     [JsonPropertyName("stringValue")]
+    [ConfigurationKeyName("stringValue")]   
     public string? StringValue { get; set; }
 
     [JsonPropertyName("intValue")]
+    [ConfigurationKeyName("intValue")]
     public int IntValue { get; set; }
 
     [JsonPropertyName("enumValue")]
+    [ConfigurationKeyName("enumValue")]
     public ExampleEnum EnumValue { get; set; }
 
     /// <summary>
@@ -24,5 +27,6 @@ public class AppSettings
     ///     See <see cref="Util.UnknownEnumConverter"/>
     /// </summary>
     [JsonPropertyName("nonexistentEnumValue")]
+    [ConfigurationKeyName("nonexistentEnumValue")]
     public ExampleEnum NonexistentEnumValue { get; set; }
 }

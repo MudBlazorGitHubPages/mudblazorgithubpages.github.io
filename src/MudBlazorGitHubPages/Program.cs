@@ -3,8 +3,8 @@ using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
-using MudBlazorPages;
-using MudBlazorPages.Util;
+using MudBlazorGitHubPages;
+using MudBlazorGitHubPages.Util;
 using Serilog;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

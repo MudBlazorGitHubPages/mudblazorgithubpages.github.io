@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace MudBlazorPages.Util.Generic;
+namespace MudBlazorGitHubPages.Util.Generic;
 
 /// <summary>
 ///     Copied from https://gaevoy.com/2023/09/26/dotnet-serialization-unknown-enums-handling-api.html
