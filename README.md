@@ -3,7 +3,7 @@
 [![](../../workflows/gh-pages/badge.svg)](../../actions)
 
 
-This project is an example of using GitHub Actions to automatically deploy a .NET 8 [MudBlazor](https://mudblazor.com/) WebAssembly SPA (Single Page Application) to GitHub Pages. For a live demo, check the following link:
+This project is an example of using GitHub Actions to automatically deploy a .NET 9 [MudBlazor](https://mudblazor.com/) WebAssembly SPA (Single Page Application) to GitHub Pages. For a live demo, check the following link:
 
 https://mudblazorgithubpages.github.io
 
@@ -11,11 +11,14 @@ Microsoft Docs already contains a [general overview](https://learn.microsoft.com
 of the steps needed for a successful deploy.
 
 ## How to deploy
-1. Create a repository based on this template via the "Use this template" button (you don't fork, a fork is for contributing to this template or creating your own template)
-2. Go to your repository Settings > GitHub Pages > set the source branch to `gh-pages-from-actions`
+# How to Fork
+1. Fork this repository
+2. Go to the repository you just created, then go to: `Settings` > `GitHub Pages` > set the source branch to `gh-pages-from-actions`
 3. [Set permissions for GitHub Actions](https://stackoverflow.com/questions/73687176/permission-denied-to-github-actionsbot-the-requested-url-returned-error-403)
-4. Enable Dependabot: `Insights` > `Dependency graph` > `Dependabot` > Enable Dependabot
-5. View your site at https://[ `your user name` | `your organization name` ].github.io
+4. View your site at https://`your_user_name | your_organization_name`.github.io/`name_you_used_in_step1`
+5. (optional) Enable Dependabot
+    1. `Insights` > `Dependency graph` > `Dependabot` > Enable Dependabot 
+    2. Create a branch named `dev` (branched from the `main` branch)
 
 ## How it works
 
